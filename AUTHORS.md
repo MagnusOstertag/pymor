@@ -13,7 +13,8 @@
 ### pyMOR 2021.2
 
 * Tim Keil, tim.keil@uni-muenster.de
-  * Simple output estimation for elliptic and parabolic problems
+  * Simple output error estimation for elliptic and parabolic problems
+  * DWR output error estimation for elliptic problems
 
 ### pyMOR 2021.1
 
