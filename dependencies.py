@@ -6,7 +6,7 @@
 # DO NOT use any python features here that require 3.6 or newer
 
 _PYTEST = 'pytest>=4.4'
-# 5.12.* blocked due to https://bugreports.qt.io/browse/PYSIDE-1004 
+# 5.12.* blocked due to https://bugreports.qt.io/browse/PYSIDE-1004
 # however the problem is not actually fixed in 5.12.3 as advertised
 _PYSIDE = 'PySide2!=5.15.2,!=5.15.2.*,!=5.11.*,!=5.12.*'
 
@@ -57,7 +57,7 @@ install_suggests = {
     'jupyter_contrib_nbextensions': 'modular collection of jupyter extensions',
     'pillow': 'image library used for bitmap data functions',
     'dune-gdt>=2021.1.3': 'generic discretization toolbox',
-    'dune-xt>=2021.1.3': 'DUNE extensions for dune-gdt',
+    'dune-xt[visualisation]>=2021.1.3': 'DUNE extensions for dune-gdt',
 }
 io_requires = ['pyevtk', 'xmljson', 'meshio>=4.4', 'lxml', 'gmsh']
 install_suggests.update({p: 'optional File I/O support libraries' for p in io_requires})
